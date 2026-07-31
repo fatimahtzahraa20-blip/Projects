@@ -7,6 +7,8 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  base: '/', // ensure correct base when deploying to root domain; change to '/subpath/' if deployed to a subpath
+
   plugins: [
     react(),
     tailwindcss()
