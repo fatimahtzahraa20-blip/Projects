@@ -10,7 +10,13 @@ import { Input } from "@/components/ui/input";
 
 export default function LoginForm() {
   const navigate = useNavigate();
-  const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(loginSchema) });
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: zodResolver(loginSchema),
+    defaultValues: {
+      email: "admin@example.com",
+      password: "admin123"
+    }
+  });
   const onSubmit = async (data) => {
     const { error, created } = await login(data.email, data.password);
     if (error) { toast.error(error.message); return; }
