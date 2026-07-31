@@ -14,9 +14,9 @@ export default function Modal({ open, onClose, title, description, children, foo
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label={title}>
+    <div className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-4" role="dialog" aria-modal="true" aria-label={title}>
       <button type="button" className="absolute inset-0 bg-slate-950/50 backdrop-blur-sm" onClick={onClose} aria-label="Close modal" />
-      <section className={cn("relative z-10 w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-900", className)}>
+      <section className={cn("relative z-10 flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-2xl bg-white shadow-2xl dark:bg-slate-900 sm:rounded-2xl", className)}>
         <header className="flex items-start justify-between border-b border-slate-200 p-5 dark:border-slate-800">
           <div>
             <h2 className="text-lg font-semibold">{title}</h2>
@@ -26,8 +26,8 @@ export default function Modal({ open, onClose, title, description, children, foo
             <X className="size-5" />
           </button>
         </header>
-        <div className="p-5">{children}</div>
-        {footer ? <footer className="flex justify-end gap-2 border-t border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-800/40">{footer}</footer> : null}
+        <div className="overflow-y-auto p-4 sm:p-5">{children}</div>
+        {footer ? <footer className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end border-t border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-800/40">{footer}</footer> : null}
       </section>
     </div>
   );

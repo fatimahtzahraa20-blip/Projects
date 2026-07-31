@@ -37,5 +37,25 @@ textarea { @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:
         animation-duration: 0.01ms !important;
     }
 }
+@media (max-width: 767px) {
+    .sidebar-shell .sidebar-label {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
+    .page-header-actions > * {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
 
+    .filter-fields > * {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .filter-fields input,
+    .filter-fields select,
+    .filter-fields button {
+        width: 100%;
+    }
+}
