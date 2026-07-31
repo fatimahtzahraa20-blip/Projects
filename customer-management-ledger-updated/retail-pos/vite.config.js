@@ -16,5 +16,17 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
+  },
+
+  // Added conservative build options to improve production build stability
+  build: {
+    target: "es2022",
+    sourcemap: false,
+    minify: "esbuild",
+    // Allow transforming mixed ESM/CJS modules which fixes many build-time
+    // errors when third-party packages ship CommonJS in node_modules.
+    commonjsOptions: {
+      transformMixedEsModules: true
+    }
   }
 });
