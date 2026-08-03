@@ -1,0 +1,1 @@
+import{MessageCircle}from"lucide-react";export function WhatsApp(){return <a href="/contact" aria-label="Contact us on WhatsApp" className="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#b7924b] text-black shadow-2xl transition hover:scale-105"><MessageCircle/></a>}

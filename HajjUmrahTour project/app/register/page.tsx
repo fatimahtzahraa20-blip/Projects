@@ -1,0 +1,3 @@
+import type { Metadata } from "next";import { InquiryForm } from "@/components/inquiry-form";
+export const metadata:Metadata={title:"Registration",description:"Register your interest in a personalized Hajj or Umrah journey."};
+export default function Register(){return <section className="min-h-screen bg-[#efede6] pb-20 pt-36"><div className="container-pad grid gap-10 lg:grid-cols-[.7fr_1.3fr]"><div><p className="eyebrow text-[#9c7937]">Registration form</p><h1 className="serif mt-4 text-5xl lg:text-7xl">Bismillah. Begin your journey.</h1><p className="mt-5 max-w-md leading-7 text-stone-600">Register your interest in just three short steps. Do not submit passport or payment details here.</p></div><InquiryForm/></div></section>}
