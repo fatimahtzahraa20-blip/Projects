@@ -1,0 +1,980 @@
+⨯ Error: Webhook secret is missing for sandbox
+    at getSandboxSafepay (src\lib\safepay.ts:9:10)
+    at POST (src\app\api\payments\safepay\checkout\route.ts:14:36)
+   7 |   if (!apiKey || !v1Secret) return null;
+   8 |   const environment = "sandbox" as ConstructorParameters<typeof Safepay>[0]["environment"];
+>  9 |   return new Safepay({ environment, apiKey, v1Secret, webhookSecret: "" });
+     |          ^
+  10 | }
+  11 |
+  12 | export function safepayProof(reference: string, tracker: string) {
+⨯ Error: Webhook secret is missing for sandbox
+    at getSandboxSafepay (src\lib\safepay.ts:9:10)
+    at POST (src\app\api\payments\safepay\checkout\route.ts:14:36)
+   7 |   if (!apiKey || !v1Secret) return null;
+   8 |   const environment = "sandbox" as ConstructorParameters<typeof Safepay>[0]["environment"];
+>  9 |   return new Safepay({ environment, apiKey, v1Secret, webhookSecret: "" });
+     |          ^
+  10 | }
+  11 |
+  12 | export function safepayProof(reference: string, tracker: string) {
+(node:12824) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[browser] Uncaught Error: ./src/lib/pricing.ts:1:1
+Export UK_PARTS doesn't exist in target module
+> 1 | import { UK_PARTS } from "@/lib/mock-data";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  3 |
+  4 | export const CALL_OUT_FEE: Record<ServiceCategory, number> = {
+
+The export UK_PARTS was not found in module [project]/src/lib/mock-data.ts [app-client] (ecmascript).
+Did you mean to import PAKISTAN_PARTS?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/pricing.ts [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/pricing.ts [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/lib/pricing.ts:1:1)
+    at <unknown> (Error: (./src/lib/pricing.ts:1:1)
+[browser] Uncaught Error: ./src/lib/pricing.ts:1:1
+Export UK_PARTS doesn't exist in target module
+> 1 | import { UK_PARTS } from "@/lib/mock-data";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  3 |
+  4 | export const CALL_OUT_FEE: Record<ServiceCategory, number> = {
+
+The export UK_PARTS was not found in module [project]/src/lib/mock-data.ts [app-client] (ecmascript).
+Did you mean to import PAKISTAN_PARTS?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/pricing.ts [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/pricing.ts [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/lib/pricing.ts:1:1)
+    at <unknown> (Error: (./src/lib/pricing.ts:1:1)
+[browser] Uncaught Error: ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/tracking/invoice-panel.tsx:8:1)
+    at <unknown> (Error: (./src/components/tracking/invoice-panel.tsx:8:1)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/lib/invoice-pdf.tsx:5:1
+Export formatPKR doesn't exist in target module
+  3 | import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
+  4 | import type { BrandSettings, Invoice, Job } from "@/types/domain";
+> 5 | import { formatPKR } from "@/lib/pricing";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const styles = StyleSheet.create({
+  8 |   page: { padding: 40, fontSize: 10, fontFamily: "Helvetica", color: "#1a1a1a" },
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/lib/invoice-pdf.tsx [Client Component Browser]
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/invoice-pdf.tsx [Client Component SSR]
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/booking/booking-flow.tsx:22:1
+Export formatPKR doesn't exist in target module
+  20 | import { Checkbox } from "@/components/ui/checkbox";
+  21 | import { SERVICES } from "@/lib/mock-data";
+> 22 | import { calculateQuote, formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import { rankEngineersForJob } from "@/lib/dispatch";
+  24 | import { useAppStore } from "@/store/app-store";
+  25 | import { ServiceIcon } from "@/components/common/service-icon";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/booking/booking-flow.tsx
+    ./src/app/(public)/booking/page.tsx 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/(public)/pricing/page.tsx:19:1
+Export formatPKR doesn't exist in target module
+  17 | } from "@/components/ui/select";
+  18 | import { SERVICES } from "@/lib/mock-data";
+> 19 | import { calculateQuote, formatPKR, partsFor } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 | import type { ServiceCategory, Urgency } from "@/types/domain";
+  21 |
+  22 | function PricingCalculator() {
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(public)/pricing/page.tsx [Client Component Browser]
+    ./src/app/(public)/pricing/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(public)/pricing/page.tsx [Client Component SSR]
+    ./src/app/(public)/pricing/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-ssr] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/laiba/Downloads/TradePro360_Smart_Booking_Dispatch_Platform/Smart Booking & Dispatch Platform/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] Uncaught Error: ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/tracking/invoice-panel.tsx:8:1)
+    at <unknown> (Error: (./src/components/tracking/invoice-panel.tsx:8:1)
+[browser] Uncaught Error: ./src/components/tracking/invoice-panel.tsx:8:1
+Export formatPKR doesn't exist in target module
+   6 | import { Button } from "@/components/ui/button";
+   7 | import { toast } from "sonner";
+>  8 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { downloadInvoicePdf } from "@/lib/invoice-pdf";
+  10 | import { useAppStore } from "@/store/app-store";
+  11 | import type { Invoice, Job } from "@/types/domain";
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/components/tracking/invoice-panel.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component Browser]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/tracking/invoice-panel.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Client Component SSR]
+    ./src/app/(public)/track/[reference]/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/tracking/invoice-panel.tsx:8:1)
+    at <unknown> (Error: (./src/components/tracking/invoice-panel.tsx:8:1)
+[browser] Uncaught Error: ./src/app/dashboard/page.tsx:11:1
+Export formatPKR doesn't exist in target module
+   9 | import { useAppStore } from "@/store/app-store";
+  10 | import { computeKpis, jobsByService, revenueTrend } from "@/lib/analytics";
+> 11 | import { formatPKR } from "@/lib/pricing";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { JobStatusBadge, UrgencyBadge } from "@/components/common/status-badge";
+  13 |
+  14 | const barConfig = { count: { label: "Jobs", color: "var(--chart-1)" } } satisfies ChartCon...
+
+The export formatPKR was not found in module [project]/src/lib/pricing.ts [app-client] (ecmascript).
+Did you mean to import formatGBP?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/app/dashboard/page.tsx:11:1)
+    at <unknown> (Error: (./src/app/dashboard/page.tsx:11:1)

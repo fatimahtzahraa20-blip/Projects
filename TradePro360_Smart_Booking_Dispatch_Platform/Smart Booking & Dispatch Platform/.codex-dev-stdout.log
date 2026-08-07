@@ -1,0 +1,236 @@
+
+> tradeweb@0.1.0 dev
+> node node_modules/next/dist/bin/next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.4:3000
+- Environments: .env
+✓ Ready in 672ms
+Creating turbopack project {
+  dir: 'C:\\Users\\laiba\\Downloads\\TradePro360_Smart_Booking_Dispatch_Platform\\Smart Booking & Dispatch Platform',
+  testMode: true
+}
+
+○ Compiling / ...
+ GET / 200 in 9.9s (next.js: 8.7s, application-code: 1236ms)
+ GET / 200 in 323ms (next.js: 10ms, application-code: 313ms)
+ GET /portal 200 in 1132ms (next.js: 1072ms, application-code: 60ms)
+○ Compiling /track/[reference] ...
+ GET /track/TW-48213 200 in 5.4s (next.js: 5.2s, application-code: 184ms)
+ GET /track/TW-48213 200 in 217ms (next.js: 24ms, application-code: 193ms)
+ GET /track/TW-48213 200 in 1490ms (next.js: 10ms, application-code: 1480ms)
+ GET /track/TW-48213 200 in 201ms (next.js: 23ms, application-code: 178ms)
+ GET /track/TW-48213 200 in 261ms (next.js: 24ms, application-code: 236ms)
+ GET /portal 200 in 67ms (next.js: 9ms, application-code: 58ms)
+ GET /track/TW-48214 200 in 54ms (next.js: 13ms, application-code: 41ms)
+ GET /booking 200 in 1264ms (next.js: 1215ms, application-code: 49ms)
+ GET /services 200 in 994ms (next.js: 858ms, application-code: 136ms)
+ GET /pricing 200 in 1324ms (next.js: 1281ms, application-code: 43ms)
+ GET /booking?service=plumbing&urgency=today 200 in 54ms (next.js: 5ms, application-code: 50ms)
+ GET / 200 in 107ms (next.js: 7ms, application-code: 100ms)
+ GET /booking 200 in 38ms (next.js: 4ms, application-code: 34ms)
+ GET / 200 in 98ms (next.js: 5ms, application-code: 93ms)
+ GET /dashboard/dispatch 200 in 1391ms (next.js: 1339ms, application-code: 51ms)
+ GET / 200 in 127ms (next.js: 6ms, application-code: 122ms)
+ GET /portal 200 in 37ms (next.js: 5ms, application-code: 32ms)
+ GET /booking 200 in 33ms (next.js: 4ms, application-code: 29ms)
+ GET / 200 in 93ms (next.js: 4ms, application-code: 89ms)
+ GET /portal 200 in 51ms (next.js: 5ms, application-code: 47ms)
+ GET / 200 in 81ms (next.js: 4ms, application-code: 77ms)
+○ Compiling /dashboard ...
+ GET /dashboard 200 in 3.2s (next.js: 3.1s, application-code: 44ms)
+ GET /dashboard/dispatch 200 in 62ms (next.js: 16ms, application-code: 46ms)
+ GET /engineer 200 in 1522ms (next.js: 1457ms, application-code: 65ms)
+ GET /dashboard 200 in 267ms (next.js: 148ms, application-code: 119ms)
+ GET / 200 in 130ms (next.js: 8ms, application-code: 122ms)
+✓ Compiled in 1968ms
+ GET / 200 in 1322ms (next.js: 303ms, application-code: 1019ms)
+ GET / 200 in 794ms (next.js: 614ms, application-code: 180ms)
+ GET / 200 in 798ms (next.js: 115ms, application-code: 683ms)
+ GET / 200 in 3.2s (next.js: 624ms, application-code: 2.6s)
+ GET / 200 in 924ms (next.js: 12ms, application-code: 912ms)
+ GET / 200 in 297ms (next.js: 10ms, application-code: 287ms)
+ GET /portal 200 in 230ms (next.js: 178ms, application-code: 52ms)
+ GET / 200 in 72ms (next.js: 5ms, application-code: 67ms)
+ GET /dashboard 200 in 197ms (next.js: 140ms, application-code: 57ms)
+ GET / 200 in 89ms (next.js: 3ms, application-code: 85ms)
+  Reload env: .env
+ GET / 200 in 993ms (next.js: 426ms, application-code: 567ms)
+  Reload env: .env
+ GET / 200 in 517ms (next.js: 176ms, application-code: 341ms)
+  Reload env: .env
+ GET / 200 in 413ms (next.js: 169ms, application-code: 244ms)
+ GET / 200 in 426ms (next.js: 170ms, application-code: 256ms)
+ GET / 200 in 1325ms (next.js: 208ms, application-code: 1117ms)
+ GET / 200 in 843ms (next.js: 6ms, application-code: 836ms)
+ GET / 200 in 968ms (next.js: 17ms, application-code: 951ms)
+ GET / 200 in 967ms (next.js: 338ms, application-code: 629ms)
+ GET / 200 in 972ms (next.js: 179ms, application-code: 793ms)
+ GET / 200 in 969ms (next.js: 515ms, application-code: 454ms)
+ GET / 200 in 841ms (next.js: 8ms, application-code: 833ms)
+ GET / 200 in 716ms (next.js: 5ms, application-code: 711ms)
+ GET / 200 in 915ms (next.js: 12ms, application-code: 903ms)
+ GET / 200 in 916ms (next.js: 132ms, application-code: 783ms)
+ GET / 200 in 914ms (next.js: 382ms, application-code: 532ms)
+ GET / 200 in 918ms (next.js: 269ms, application-code: 649ms)
+ GET / 200 in 991ms (next.js: 9ms, application-code: 982ms)
+ GET / 200 in 991ms (next.js: 139ms, application-code: 852ms)
+ GET / 200 in 884ms (next.js: 11ms, application-code: 873ms)
+ GET / 200 in 883ms (next.js: 274ms, application-code: 610ms)
+ GET / 200 in 884ms (next.js: 410ms, application-code: 474ms)
+ GET / 200 in 888ms (next.js: 153ms, application-code: 735ms)
+ GET / 200 in 867ms (next.js: 129ms, application-code: 739ms)
+ GET / 200 in 871ms (next.js: 7ms, application-code: 864ms)
+ GET / 200 in 888ms (next.js: 132ms, application-code: 756ms)
+ GET / 200 in 894ms (next.js: 12ms, application-code: 883ms)
+ GET / 200 in 894ms (next.js: 278ms, application-code: 616ms)
+ GET / 200 in 897ms (next.js: 432ms, application-code: 465ms)
+ GET / 200 in 873ms (next.js: 6ms, application-code: 867ms)
+ GET / 200 in 880ms (next.js: 127ms, application-code: 753ms)
+ GET / 200 in 855ms (next.js: 10ms, application-code: 845ms)
+ GET / 200 in 857ms (next.js: 119ms, application-code: 738ms)
+ GET / 200 in 857ms (next.js: 251ms, application-code: 606ms)
+ GET / 200 in 494ms (next.js: 23ms, application-code: 471ms)
+ GET / 200 in 832ms (next.js: 7ms, application-code: 825ms)
+ GET / 200 in 835ms (next.js: 145ms, application-code: 690ms)
+ GET / 200 in 695ms (next.js: 11ms, application-code: 683ms)
+ GET / 200 in 662ms (next.js: 9ms, application-code: 653ms)
+ GET / 200 in 665ms (next.js: 120ms, application-code: 546ms)
+ GET / 200 in 671ms (next.js: 139ms, application-code: 532ms)
+ GET / 200 in 772ms (next.js: 8ms, application-code: 764ms)
+ GET / 200 in 653ms (next.js: 7ms, application-code: 646ms)
+ GET / 200 in 667ms (next.js: 7ms, application-code: 660ms)
+ GET / 200 in 698ms (next.js: 9ms, application-code: 690ms)
+ GET / 200 in 751ms (next.js: 6ms, application-code: 745ms)
+ GET / 200 in 899ms (next.js: 121ms, application-code: 778ms)
+ GET / 200 in 940ms (next.js: 6ms, application-code: 934ms)
+ GET / 200 in 817ms (next.js: 8ms, application-code: 809ms)
+ GET / 200 in 658ms (next.js: 7ms, application-code: 651ms)
+ GET / 200 in 503ms (next.js: 9ms, application-code: 494ms)
+ GET / 200 in 348ms (next.js: 11ms, application-code: 337ms)
+ GET / 200 in 345ms (next.js: 162ms, application-code: 182ms)
+ POST /api/payments/safepay/checkout 503 in 2.4s (next.js: 2.3s, application-code: 68ms)
+ GET /portal 200 in 162ms (next.js: 68ms, application-code: 94ms)
+ GET /track/TW-48213 200 in 545ms (next.js: 376ms, application-code: 169ms)
+ GET /track/TW-48213 200 in 1506ms (next.js: 8ms, application-code: 1498ms)
+ GET /portal 200 in 66ms (next.js: 8ms, application-code: 58ms)
+ GET /track/TW-48221 200 in 91ms (next.js: 21ms, application-code: 70ms)
+ GET /portal 200 in 89ms (next.js: 9ms, application-code: 80ms)
+ GET /track/TW-48197 200 in 81ms (next.js: 26ms, application-code: 55ms)
+ POST /api/payments/safepay/checkout 503 in 47ms (next.js: 7ms, application-code: 40ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 396ms (next.js: 282ms, application-code: 114ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 332ms (next.js: 178ms, application-code: 155ms)
+ GET /track/TW-48197 200 in 217ms (next.js: 127ms, application-code: 90ms)
+ POST /api/payments/safepay/checkout 503 in 111ms (next.js: 96ms, application-code: 15ms)
+ GET /track/TW-48197 200 in 5.2s (next.js: 68ms, application-code: 5.2s)
+ GET /track/TW-48197 200 in 498ms (next.js: 34ms, application-code: 464ms)
+ POST /api/payments/safepay/checkout 503 in 29ms (next.js: 8ms, application-code: 22ms)
+ GET /track/TW-48197 200 in 428ms (next.js: 250ms, application-code: 178ms)
+ GET /track/TW-48197 200 in 340ms (next.js: 173ms, application-code: 167ms)
+ GET /track/TW-48197 200 in 311ms (next.js: 162ms, application-code: 149ms)
+ POST /api/payments/safepay/checkout 503 in 255ms (next.js: 208ms, application-code: 47ms)
+ POST /api/payments/safepay/checkout 503 in 43ms (next.js: 16ms, application-code: 27ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 417ms (next.js: 280ms, application-code: 136ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 540ms (next.js: 316ms, application-code: 224ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 373ms (next.js: 218ms, application-code: 155ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 371ms (next.js: 205ms, application-code: 166ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 327ms (next.js: 204ms, application-code: 122ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 424ms (next.js: 305ms, application-code: 119ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 302ms (next.js: 177ms, application-code: 124ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 2.5s (next.js: 2.2s, application-code: 312ms)
+ GET /track/TW-48197 200 in 140ms (next.js: 11ms, application-code: 129ms)
+ POST /api/payments/safepay/checkout 500 in 3.0s (next.js: 1720ms, application-code: 1304ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 794ms (next.js: 579ms, application-code: 214ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 477ms (next.js: 260ms, application-code: 218ms)
+ POST /api/payments/safepay/checkout 500 in 1270ms (next.js: 248ms, application-code: 1022ms)
+✓ Compiled in 2.8s
+ GET /track/TW-48197 200 in 1964ms (next.js: 1360ms, application-code: 604ms)
+ GET /track/TW-48197 200 in 178ms (next.js: 12ms, application-code: 166ms)
+ POST /api/payments/safepay/checkout 200 in 2.7s (next.js: 259ms, application-code: 2.5s)
+  Reload env: .env
+ GET /track/TW-48197 200 in 835ms (next.js: 622ms, application-code: 213ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 296ms (next.js: 183ms, application-code: 112ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 569ms (next.js: 332ms, application-code: 236ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 539ms (next.js: 312ms, application-code: 226ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 580ms (next.js: 370ms, application-code: 210ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 289ms (next.js: 177ms, application-code: 112ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 243ms (next.js: 141ms, application-code: 102ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 324ms (next.js: 179ms, application-code: 145ms)
+  Reload env: .env
+ GET /track/TW-48197 200 in 300ms (next.js: 196ms, application-code: 104ms)
+ GET /track/TW-48197 200 in 236ms (next.js: 150ms, application-code: 86ms)
+ POST /api/payments/safepay/checkout 200 in 1086ms (next.js: 207ms, application-code: 879ms)
+  Reload env: .env
+  Reload env: .env
+ GET /track/TW-48197 200 in 1758ms (next.js: 291ms, application-code: 1467ms)
+ GET /track/TW-48197 200 in 440ms (next.js: 25ms, application-code: 415ms)
+ POST /api/payments/safepay/checkout 200 in 1784ms (next.js: 173ms, application-code: 1611ms)
+ GET / 200 in 401ms (next.js: 115ms, application-code: 286ms)
+ GET /services 200 in 644ms (next.js: 394ms, application-code: 250ms)
+ GET /pricing 200 in 411ms (next.js: 302ms, application-code: 109ms)
+ GET /portal 200 in 176ms (next.js: 98ms, application-code: 79ms)
+ GET /services 200 in 178ms (next.js: 14ms, application-code: 164ms)
+ GET /portal 200 in 67ms (next.js: 9ms, application-code: 58ms)
+ GET /track/TW-48214 200 in 126ms (next.js: 40ms, application-code: 86ms)
+ GET / 200 in 178ms (next.js: 7ms, application-code: 171ms)
+ GET /dashboard 200 in 185ms (next.js: 67ms, application-code: 118ms)
+○ Compiling /dashboard/jobs ...
+ GET /dashboard/jobs 200 in 5.5s (next.js: 5.3s, application-code: 208ms)
+ GET /dashboard/jobs 200 in 159ms (next.js: 9ms, application-code: 150ms)
+ GET /dashboard/jobs 200 in 90ms (next.js: 11ms, application-code: 78ms)
+ GET /dashboard/dispatch 200 in 415ms (next.js: 318ms, application-code: 97ms)
+ GET /dashboard/settings 200 in 1630ms (next.js: 1551ms, application-code: 79ms)
+✓ Finished filesystem cache database compaction in 10.7s
+✓ Compiled in 1705ms
+ GET /dashboard/settings 500 in 3.0s (next.js: 2.7s, application-code: 295ms)
+ GET /dashboard/settings 500 in 53ms (next.js: 27ms, application-code: 27ms)
+ GET /dashboard/settings 500 in 47ms (next.js: 27ms, application-code: 19ms)
+ GET /dashboard/settings 500 in 64ms (next.js: 37ms, application-code: 28ms)
+✓ Compiled in 301ms
+ GET /dashboard/settings 500 in 105ms (next.js: 71ms, application-code: 34ms)
+✓ Compiled in 356ms
+ GET /dashboard/settings 500 in 57ms (next.js: 34ms, application-code: 22ms)
+✓ Compiled in 315ms
+ GET /dashboard/settings 500 in 60ms (next.js: 39ms, application-code: 21ms)
+✓ Compiled in 267ms
+ GET /dashboard/settings 500 in 45ms (next.js: 18ms, application-code: 27ms)
+✓ Compiled in 257ms
+ GET /dashboard/settings 500 in 34ms (next.js: 14ms, application-code: 19ms)
+✓ Compiled in 265ms
+ GET /dashboard/settings 200 in 1919ms (next.js: 493ms, application-code: 1426ms)
+✓ Compiled in 187ms
+ GET /dashboard/settings 200 in 349ms (next.js: 121ms, application-code: 228ms)
+ GET /dashboard/settings 200 in 161ms (next.js: 7ms, application-code: 154ms)
+ GET /dashboard/settings 200 in 54ms (next.js: 5ms, application-code: 48ms)
+✓ Compiled in 239ms
+ GET /dashboard/settings 200 in 403ms (next.js: 101ms, application-code: 302ms)
+ GET /dashboard/settings 200 in 215ms (next.js: 7ms, application-code: 208ms)
+ GET /dashboard/settings 200 in 147ms (next.js: 7ms, application-code: 141ms)
+ GET /dashboard/settings 200 in 147ms (next.js: 62ms, application-code: 85ms)
+ GET /dashboard/settings 200 in 147ms (next.js: 104ms, application-code: 44ms)
+ POST /api/payments/safepay/checkout 200 in 1734ms (next.js: 122ms, application-code: 1612ms)
+ GET / 200 in 381ms (next.js: 203ms, application-code: 178ms)
+ GET / 200 in 2.2s (next.js: 110ms, application-code: 2.1s)
+ GET / 200 in 451ms (next.js: 17ms, application-code: 434ms)
+ GET /dashboard 200 in 356ms (next.js: 298ms, application-code: 58ms)
+ GET / 200 in 98ms (next.js: 4ms, application-code: 95ms)
