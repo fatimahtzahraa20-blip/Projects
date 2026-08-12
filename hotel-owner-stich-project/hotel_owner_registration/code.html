@@ -1,0 +1,482 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-secondary":"#ffffff","on-surface-variant":"#45464d","tertiary-fixed":"#fcdeb5","error":"#ba1a1a","warning-amber":"#F59E0B","error-rose":"#F43F5E","primary-fixed-dim":"#bec6e0","on-surface":"#1b1b1d","primary-fixed":"#dae2fd","on-primary":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#d3e4fe","primary":"#000000","on-tertiary-container":"#98805d","surface-container-highest":"#e4e2e4","surface-container-lowest":"#ffffff","surface":"#fcf8fa","outline":"#76777d","secondary-container":"#d0e1fb","secondary":"#505f76","on-primary-container":"#7c839b","success-emerald":"#10B981","on-background":"#1b1b1d","on-error":"#ffffff","on-tertiary-fixed-variant":"#574425","surface-bright":"#fcf8fa","on-tertiary":"#ffffff","on-primary-fixed":"#131b2e","on-secondary-container":"#54647a","primary-container":"#131b2e","secondary-fixed-dim":"#b7c8e1","outline-variant":"#c6c6cd","on-secondary-fixed":"#0b1c30","inverse-on-surface":"#f3f0f2","tertiary-fixed-dim":"#dec29a","tertiary-container":"#271901","on-tertiary-fixed":"#271901","inverse-surface":"#303032","error-container":"#ffdad6","inverse-primary":"#bec6e0","neutral-slate-50":"#F8FAFC","surface-tint":"#565e74","surface-container-high":"#eae7e9","background":"#fcf8fa","surface-variant":"#e4e2e4","neutral-slate-200":"#E2E8F0","on-secondary-fixed-variant":"#38485d","on-primary-fixed-variant":"#3f465c","surface-dim":"#dcd9db","surface-container-low":"#f6f3f5","tertiary":"#000000","surface-container":"#f0edef"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sidebar-width":"280px","margin-desktop":"32px","margin-mobile":"16px","gutter":"24px","baseline":"4px"},"fontFamily":{"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><main class="min-h-screen flex items-center justify-center p-margin-mobile"><div class="flex flex-col w-full font-body-md text-on-surface">
+<!-- Header Section -->
+<div class="flex flex-col items-start mb-8 pt-8 px-8 max-w-4xl mx-auto w-full">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Register Your Property</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Join our platform to manage your hotel's visibility and operations efficiently. Complete this four-step registration process to get started.
+        </p>
+</div>
+<!-- Main Content Container -->
+<div class="flex flex-col lg:flex-row gap-gutter w-full max-w-6xl mx-auto px-8 pb-12 relative items-start">
+<!-- Sidebar: Progress Indicator -->
+<aside class="w-full lg:w-sidebar-width flex-shrink-0 sticky top-8 z-10 hidden lg:block">
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-6 flex flex-col gap-6">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Registration Progress</h2>
+<div class="relative flex flex-col gap-8 before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-surface-variant z-0">
+<!-- Step 1: Active -->
+<div class="relative z-10 flex items-start gap-4 cursor-pointer group" onclick="switchStep(1)">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-sm transition-transform group-hover:scale-110" id="indicator-1">
+<span class="font-label-md text-label-md text-on-primary">1</span>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider">Step 1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface transition-colors">Basic Info</span>
+</div>
+</div>
+<!-- Step 2: Pending -->
+<div class="relative z-10 flex items-start gap-4 cursor-pointer group opacity-60 hover:opacity-100 transition-opacity" onclick="switchStep(2)">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center transition-transform group-hover:scale-110" id="indicator-2">
+<span class="font-label-md text-label-md text-on-surface-variant">2</span>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Step 2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant transition-colors">Location</span>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="relative z-10 flex items-start gap-4 cursor-pointer group opacity-60 hover:opacity-100 transition-opacity" onclick="switchStep(3)">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center transition-transform group-hover:scale-110" id="indicator-3">
+<span class="font-label-md text-label-md text-on-surface-variant">3</span>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Step 3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant transition-colors">Details</span>
+</div>
+</div>
+<!-- Step 4: Pending -->
+<div class="relative z-10 flex items-start gap-4 cursor-pointer group opacity-60 hover:opacity-100 transition-opacity" onclick="switchStep(4)">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center transition-transform group-hover:scale-110" id="indicator-4">
+<span class="font-label-md text-label-md text-on-surface-variant">4</span>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Step 4</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant transition-colors">Verification</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Help Card -->
+<div class="mt-6 bg-primary-fixed shadow-sm rounded-xl p-6 hidden lg:flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-primary-fixed mb-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">help</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider">Need Help?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant" id="help-text">
+                    Start by entering the legal registered name of your property. Ensure the email address provided is actively monitored by management.
+                </p>
+</div>
+</aside>
+<!-- Form Area -->
+<div class="flex-1 w-full flex flex-col relative z-0 min-w-0">
+<div class="bg-surface-container-lowest shadow-md rounded-2xl overflow-hidden relative">
+<!-- Progress bar for mobile -->
+<div class="h-1 bg-surface-variant w-full lg:hidden absolute top-0 left-0 z-10">
+<div class="h-full bg-primary transition-all duration-300" id="mobile-progress" style="width: 25%;"></div>
+</div>
+<div class="p-8 lg:p-10" id="form-container">
+<!-- STEP 1: BASIC INFO -->
+<div class="flex flex-col gap-8 transition-opacity duration-300 opacity-100 animate-[fadeIn_0.4s_ease-out]" id="step-1">
+<div class="flex flex-col gap-2 border-b border-surface-variant pb-6 mb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Basic Information</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Please provide the primary contact and identification details for your property.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Hotel Name -->
+<div class="flex flex-col gap-2 md:col-span-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex justify-between" for="hotelName">
+                                    Hotel / Property Name *
+                                    <span class="material-symbols-outlined text-[14px] text-outline cursor-help" title="Enter the legal trading name of the property">info</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">apartment</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="hotelName" placeholder="e.g. The Grand Plaza Hotel" type="text"/>
+</div>
+</div>
+<!-- Owner First Name -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="firstName">Owner First Name *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">person</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="firstName" placeholder="First Name" type="text"/>
+</div>
+</div>
+<!-- Owner Last Name -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="lastName">Owner Last Name *</label>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 px-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="lastName" placeholder="Last Name" type="text"/>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-2 md:col-span-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="email">Management Email Address *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">mail</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="email" placeholder="manager@hotel.com" type="email"/>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">We'll use this for all official communications.</span>
+</div>
+<!-- Phone Number -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="phone">Phone Number *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">call</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Corporate Entity -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="company">Operating Company (Optional)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">corporate_fare</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="company" placeholder="LLC or Corp Name" type="text"/>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex justify-end mt-4 pt-6 border-t border-surface-variant">
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg shadow-sm flex items-center gap-2 transition-all hover:shadow-md hover:-translate-y-0.5" onclick="nextStep(1)">
+                                Continue to Location
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: LOCATION (Hidden initially) -->
+<div class="flex flex-col gap-8 hidden opacity-0" id="step-2">
+<div class="flex flex-col gap-2 border-b border-surface-variant pb-6 mb-2">
+<div class="flex items-center gap-3">
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" onclick="prevStep(2)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<h2 class="font-headline-md text-headline-md text-on-surface">Physical Location</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant pl-11">Where is your property located? This helps us position you correctly on our booking maps.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+<!-- Address Fields (Left Col) -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="address1">Street Address *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">location_on</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="address1" placeholder="123 Main St" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="address2">Suite / Floor (Optional)</label>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 px-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="address2" placeholder="Building B, Floor 4" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="city">City *</label>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 px-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="city" placeholder="City" type="text"/>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="zip">Postal Code *</label>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 px-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="zip" placeholder="Zip/Postal" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="country">Country *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">public</span>
+<select class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-10 font-body-lg text-body-lg text-on-surface rounded-t-md appearance-none" id="country">
+<option disabled="" selected="" value="">Select Country</option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+<option value="FR">France</option>
+<option value="JP">Japan</option>
+<option value="AU">Australia</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Map Area (Right Col) -->
+<div class="lg:col-span-3 flex flex-col h-[300px] lg:h-auto rounded-xl overflow-hidden shadow-sm relative group">
+<div class="absolute top-4 left-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2 border border-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">my_location</span>
+<span class="font-label-sm text-label-sm text-on-surface">Map Preview</span>
+</div>
+<div class="w-full h-full bg-cover bg-center min-h-[300px] transition-transform duration-700 group-hover:scale-105" data-location="New York City, NY" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQkZ9IuGPf97YAOKZjY1TjgG7oHvbaRIvOjICoFk-P_719AlO0DBGiypEfZlcrdiPYw2FyHXeMcckS0FmeAZKO-21RnU1rDfNTw8Hs4y5seGetGAfsTdAzrBxLMTi8tv3ASSYAl9yP4uIusHtDu5UtKcP2p83Cfe-neq2rH-l6uyMWpjWyKdIRelWnka7mRq6qAnn2mDMnkrBUlGA-A2sLgSXX6m1Z0VvsKLuwyWepweANcptmynwL')"></div>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none mix-blend-multiply"></div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex justify-between mt-4 pt-6 border-t border-surface-variant">
+<button class="bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md px-6 py-3 rounded-lg transition-colors flex items-center gap-2" onclick="prevStep(2)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                                Back
+                            </button>
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg shadow-sm flex items-center gap-2 transition-all hover:shadow-md hover:-translate-y-0.5" onclick="nextStep(2)">
+                                Continue to Details
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 3: DETAILS (Hidden initially) -->
+<div class="flex flex-col gap-8 hidden opacity-0" id="step-3">
+<div class="flex flex-col gap-2 border-b border-surface-variant pb-6 mb-2">
+<div class="flex items-center gap-3">
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" onclick="prevStep(3)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<h2 class="font-headline-md text-headline-md text-on-surface">Property Details</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant pl-11">Tell us about your property's capacity and characteristics to ensure correct categorization.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<!-- Property Type -->
+<div class="flex flex-col gap-4 md:col-span-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Property Category *</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<!-- Option 1 -->
+<label class="relative cursor-pointer group">
+<input checked="" class="peer sr-only" name="prop_type" type="radio" value="hotel"/>
+<div class="h-full bg-surface-container-low border border-surface-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center transition-all peer-checked:bg-primary-fixed peer-checked:border-primary peer-checked:shadow-sm hover:border-primary-fixed-dim">
+<span class="material-symbols-outlined text-[28px] text-outline peer-checked:text-primary transition-colors" style="font-variation-settings: 'FILL' 1;">hotel</span>
+<span class="font-label-md text-label-md text-on-surface peer-checked:text-on-primary-container">Hotel</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="prop_type" type="radio" value="resort"/>
+<div class="h-full bg-surface-container-low border border-surface-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center transition-all peer-checked:bg-primary-fixed peer-checked:border-primary peer-checked:shadow-sm hover:border-primary-fixed-dim">
+<span class="material-symbols-outlined text-[28px] text-outline peer-checked:text-primary transition-colors" style="font-variation-settings: 'FILL' 1;">beach_access</span>
+<span class="font-label-md text-label-md text-on-surface peer-checked:text-on-primary-container">Resort</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="prop_type" type="radio" value="boutique"/>
+<div class="h-full bg-surface-container-low border border-surface-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center transition-all peer-checked:bg-primary-fixed peer-checked:border-primary peer-checked:shadow-sm hover:border-primary-fixed-dim">
+<span class="material-symbols-outlined text-[28px] text-outline peer-checked:text-primary transition-colors" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+<span class="font-label-md text-label-md text-on-surface peer-checked:text-on-primary-container">Boutique</span>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="prop_type" type="radio" value="apartment"/>
+<div class="h-full bg-surface-container-low border border-surface-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center transition-all peer-checked:bg-primary-fixed peer-checked:border-primary peer-checked:shadow-sm hover:border-primary-fixed-dim">
+<span class="material-symbols-outlined text-[28px] text-outline peer-checked:text-primary transition-colors" style="font-variation-settings: 'FILL' 1;">holiday_village</span>
+<span class="font-label-md text-label-md text-on-surface peer-checked:text-on-primary-container">Apartments</span>
+</div>
+</label>
+</div>
+</div>
+<div class="w-full h-px bg-surface-variant md:col-span-2 my-2"></div>
+<!-- Room Count -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="rooms">Total Number of Rooms *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">meeting_room</span>
+<input class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant" id="rooms" min="1" placeholder="e.g. 50" type="number"/>
+</div>
+</div>
+<!-- Star Rating -->
+<div class="flex flex-col gap-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="rating">Official Star Rating</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors" style="font-variation-settings: 'FILL' 1;">star</span>
+<select class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 pl-10 pr-10 font-body-lg text-body-lg text-on-surface rounded-t-md appearance-none" id="rating">
+<option value="none">Unrated / Not Applicable</option>
+<option value="1">1 Star</option>
+<option value="2">2 Stars</option>
+<option value="3">3 Stars</option>
+<option value="4">4 Stars</option>
+<option value="5">5 Stars</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-2 md:col-span-2 group">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="description">Property Description (Short)</label>
+<textarea class="w-full bg-surface-container-low border-b-2 border-surface-variant focus:border-primary focus:outline-none transition-colors py-3 px-4 font-body-lg text-body-lg text-on-surface rounded-t-md placeholder:text-outline-variant resize-none" id="description" placeholder="Briefly describe what makes your property unique..." rows="3"></textarea>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex justify-between mt-4 pt-6 border-t border-surface-variant">
+<button class="bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md px-6 py-3 rounded-lg transition-colors flex items-center gap-2" onclick="prevStep(3)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                                Back
+                            </button>
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg shadow-sm flex items-center gap-2 transition-all hover:shadow-md hover:-translate-y-0.5" onclick="nextStep(3)">
+                                Continue to Verification
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 4: VERIFICATION (Hidden initially) -->
+<div class="flex flex-col gap-8 hidden opacity-0" id="step-4">
+<div class="flex flex-col gap-2 border-b border-surface-variant pb-6 mb-2">
+<div class="flex items-center gap-3">
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-variant flex items-center justify-center text-on-surface transition-colors" onclick="prevStep(4)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<h2 class="font-headline-md text-headline-md text-on-surface">Legal Verification</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant pl-11">To establish trust on our platform, we require documentation proving ownership or authorization to manage this property.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Upload Box 1: Business License -->
+<div class="flex flex-col gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Business License</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Upload a valid hotel operating license or business registration.</p>
+<div class="relative w-full h-48 border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group overflow-hidden">
+<input accept=".pdf,.jpg,.png" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[24px]">cloud_upload</span>
+</div>
+<div class="text-center px-4 relative z-0">
+<span class="font-label-md text-label-md text-primary block mb-1">Click to upload</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SVG, PNG, JPG or PDF (max. 10MB)</span>
+</div>
+</div>
+</div>
+<!-- Upload Box 2: Owner ID -->
+<div class="flex flex-col gap-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Identity Proof</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Upload a government-issued ID for the primary owner/manager.</p>
+<div class="relative w-full h-48 border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group overflow-hidden">
+<input accept=".pdf,.jpg,.png" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[24px]">badge</span>
+</div>
+<div class="text-center px-4 relative z-0">
+<span class="font-label-md text-label-md text-primary block mb-1">Click to upload</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SVG, PNG, JPG or PDF (max. 10MB)</span>
+</div>
+</div>
+</div>
+<!-- Terms Consent -->
+<div class="md:col-span-2 bg-surface-container rounded-xl p-4 flex gap-4 mt-2">
+<div class="pt-0.5 flex-shrink-0">
+<label class="relative flex items-center cursor-pointer">
+<input class="peer sr-only" type="checkbox"/>
+<div class="w-5 h-5 border-2 border-outline rounded bg-surface-container-lowest peer-checked:bg-primary peer-checked:border-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary opacity-0 peer-checked:opacity-100 transition-opacity" style="font-weight: 700;">check</span>
+</div>
+</label>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">I attest that the information provided is accurate.</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">By submitting this registration, I agree to the <a class="text-primary hover:underline" href="#">Terms of Service</a> and acknowledge that false information may lead to account suspension.</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex justify-between mt-4 pt-6 border-t border-surface-variant">
+<button class="bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md px-6 py-3 rounded-lg transition-colors flex items-center gap-2" onclick="prevStep(4)">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                                Back
+                            </button>
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md px-8 py-3 rounded-lg shadow-sm flex items-center gap-2 transition-all hover:shadow-md hover:-translate-y-0.5 relative overflow-hidden group">
+<span class="relative z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                                    Submit Registration
+                                </span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+<script>
+    const helpTexts = {
+        1: "Start by entering the legal registered name of your property. Ensure the email address provided is actively monitored by management.",
+        2: "Enter the precise physical address. This exact location will be used to place a pin on our maps for potential guests.",
+        3: "Select the category that best fits your property. Accurate room counts and descriptions help us match you with the right clientele.",
+        4: "Clear, legible copies of your business license and ID speed up the approval process. Files must be under 10MB."
+    };
+
+    function switchStep(targetStep) {
+        // Simple validation mock - normally wouldn't allow jumping ahead without filling required fields
+        showStep(targetStep);
+    }
+
+    function nextStep(currentStep) {
+        if(currentStep < 4) {
+            showStep(currentStep + 1);
+        }
+    }
+
+    function prevStep(currentStep) {
+        if(currentStep > 1) {
+            showStep(currentStep - 1);
+        }
+    }
+
+    function showStep(stepIndex) {
+        // Hide all steps
+        for(let i = 1; i <= 4; i++) {
+            const el = document.getElementById(`step-${i}`);
+            if(el) {
+                el.classList.add('hidden');
+                el.classList.remove('opacity-100', 'animate-[fadeIn_0.4s_ease-out]');
+                el.classList.add('opacity-0');
+            }
+        }
+
+        // Show target step with animation
+        const targetEl = document.getElementById(`step-${stepIndex}`);
+        if(targetEl) {
+            targetEl.classList.remove('hidden');
+            // small delay to allow display:block to apply before animating opacity
+            setTimeout(() => {
+                targetEl.classList.remove('opacity-0');
+                targetEl.classList.add('opacity-100', 'animate-[fadeIn_0.4s_ease-out]');
+            }, 50);
+        }
+
+        // Update sidebar indicators
+        for(let i = 1; i <= 4; i++) {
+            const indicator = document.getElementById(`indicator-${i}`);
+            const parent = indicator.parentElement;
+            
+            if(i < stepIndex) {
+                // Completed
+                indicator.className = "flex-shrink-0 w-6 h-6 rounded-full bg-success-emerald flex items-center justify-center shadow-sm transition-transform group-hover:scale-110";
+                indicator.innerHTML = '<span class="material-symbols-outlined text-[14px] text-on-primary" style="font-variation-settings: \'FILL\' 1;">check</span>';
+                parent.classList.remove('opacity-60');
+            } else if (i === stepIndex) {
+                // Current
+                indicator.className = "flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-sm transition-transform group-hover:scale-110";
+                indicator.innerHTML = `<span class="font-label-md text-label-md text-on-primary">${i}</span>`;
+                parent.classList.remove('opacity-60');
+            } else {
+                // Pending
+                indicator.className = "flex-shrink-0 w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center transition-transform group-hover:scale-110";
+                indicator.innerHTML = `<span class="font-label-md text-label-md text-on-surface-variant">${i}</span>`;
+                parent.classList.add('opacity-60');
+            }
+        }
+
+        // Update help text
+        const helpTextEl = document.getElementById('help-text');
+        if(helpTextEl) {
+            helpTextEl.textContent = helpTexts[stepIndex];
+        }
+
+        // Update mobile progress bar
+        const mobileProgress = document.getElementById('mobile-progress');
+        if(mobileProgress) {
+            mobileProgress.style.width = `${(stepIndex / 4) * 100}%`;
+        }
+
+        // Scroll top slightly to ensure top of form is visible
+        window.scrollTo({
+            top: document.getElementById('form-container').offsetTop - 100,
+            behavior: 'smooth'
+        });
+    }
+</script></main></body></html>

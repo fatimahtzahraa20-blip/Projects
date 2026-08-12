@@ -1,0 +1,367 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-secondary":"#ffffff","on-surface-variant":"#45464d","tertiary-fixed":"#fcdeb5","error":"#ba1a1a","warning-amber":"#F59E0B","error-rose":"#F43F5E","primary-fixed-dim":"#bec6e0","on-surface":"#1b1b1d","primary-fixed":"#dae2fd","on-primary":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#d3e4fe","primary":"#000000","on-tertiary-container":"#98805d","surface-container-highest":"#e4e2e4","surface-container-lowest":"#ffffff","surface":"#fcf8fa","outline":"#76777d","secondary-container":"#d0e1fb","secondary":"#505f76","on-primary-container":"#7c839b","success-emerald":"#10B981","on-background":"#1b1b1d","on-error":"#ffffff","on-tertiary-fixed-variant":"#574425","surface-bright":"#fcf8fa","on-tertiary":"#ffffff","on-primary-fixed":"#131b2e","on-secondary-container":"#54647a","primary-container":"#131b2e","secondary-fixed-dim":"#b7c8e1","outline-variant":"#c6c6cd","on-secondary-fixed":"#0b1c30","inverse-on-surface":"#f3f0f2","tertiary-fixed-dim":"#dec29a","tertiary-container":"#271901","on-tertiary-fixed":"#271901","inverse-surface":"#303032","error-container":"#ffdad6","inverse-primary":"#bec6e0","neutral-slate-50":"#F8FAFC","surface-tint":"#565e74","surface-container-high":"#eae7e9","background":"#fcf8fa","surface-variant":"#e4e2e4","neutral-slate-200":"#E2E8F0","on-secondary-fixed-variant":"#38485d","on-primary-fixed-variant":"#3f465c","surface-dim":"#dcd9db","surface-container-low":"#f6f3f5","tertiary":"#000000","surface-container":"#f0edef"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sidebar-width":"280px","margin-desktop":"32px","margin-mobile":"16px","gutter":"24px","baseline":"4px"},"fontFamily":{"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[sidebar-width] bg-primary-container z-50 flex flex-col shadow-xl"><div class="p-8 flex items-center gap-3"><img alt="StayPro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfD7qO3A7ScB75LpffAz0JQjpCSNjaH6rd8jn3grHtWb3IkJbMhoDxUl8wYFROwzUgXDkgWKGb8krBayieS-NxiGpzCMyTghQSBRhe-8uydig5Y7szs85CiEUjChEK4JzjNEAPWo5hLuLrbqsvE7Rb-a3uFPYBZ96GN8jHONCx02GCUxA0KcNTBnlanfZQo1rYZ06qmHRdmKhoqRrC5br0wM9awOXc2umaGagEueEcgwXIxXhlqtXK"/><span class="text-on-primary font-headline-md text-headline-md tracking-tight">StayPro</span></div><nav class="flex-1 px-4 space-y-baseline" data-active-classes="bg-surface/10 text-on-primary font-bold"><div class="px-4 py-2 mb-2"><span class="text-on-primary-fixed-variant font-label-md text-label-md uppercase tracking-widest">Navigation</span></div><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-all duration-200 group bg-surface/10 text-on-primary font-bold" data-path="admin-registration-queue" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">how_to_reg</span><span class="font-body-md text-body-md">Registration Queue</span></a><a class="flex items-center px-4 py-3 rounded-lg text-on-primary-fixed-variant hover:bg-surface/5 hover:text-on-primary transition-all duration-200" data-path="admin-hotels" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">apartment</span><span class="font-body-md text-body-md">Hotels</span></a><a class="flex items-center px-4 py-3 rounded-lg text-on-primary-fixed-variant hover:bg-surface/5 hover:text-on-primary transition-all duration-200" data-path="owner-dashboard" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center px-4 py-3 rounded-lg text-on-primary-fixed-variant hover:bg-surface/5 hover:text-on-primary transition-all duration-200" data-path="owner-rooms" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">bed</span><span class="font-body-md text-body-md">Rooms</span></a><a class="flex items-center px-4 py-3 rounded-lg text-on-primary-fixed-variant hover:bg-surface/5 hover:text-on-primary transition-all duration-200" data-path="analytics" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">monitoring</span><span class="font-body-md text-body-md">Analytics</span></a></nav><div class="p-4 border-t border-on-primary-fixed-variant/10"><a class="flex items-center px-4 py-3 rounded-lg text-on-primary-fixed-variant hover:bg-surface/5 hover:text-on-primary transition-all duration-200" data-path="settings" href="#"><span class="material-symbols-outlined mr-3 text-[22px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></div></aside><div class="pl-[sidebar-width]"><header class="fixed top-0 left-[sidebar-width] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-4"></div><div class="flex items-center gap-6"><button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">search</span></button><button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span></button><div class="flex items-center gap-3 pl-4 border-l border-outline-variant"><div class="text-right hidden sm:block"><div class="text-body-md font-bold text-on-surface">Alex Johnson</div><div class="text-label-sm text-on-surface-variant">Administrator</div></div><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMxhrcMo63FQbN3BPMuwRruRjZTxbV0JNITXb899ALXb9kN6sbKVwBHIG0mOtYVieuRnYS1ojZMKWVaNnFceW5T5sNDM4mowNrpKHL8AN2LNR6je9v_HCvi0s0S1BRD-Liq0oumNVgEeQV_0LtKqW5J60mOBlT75EBKklKz0FhmRkevc7aWUxAWEobaaq0f3PghqoldJocxVUnNADrUPcTNM47XA3DD9B_VT-3V57pgopccKpsnE5N"/></div></div></header><main class="relative pt-16 min-h-screen bg-surface-container-low"><div class="flex flex-col w-full">
+<!-- Header Summary Section -->
+<section class="flex flex-col px-margin-desktop py-8 gap-8">
+<!-- Page Title & Actions -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Registration Queue</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Review and manage pending hotel registration requests.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-surface-container-highest hover:bg-surface-dim text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-200 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                    EXPORT REPORT
+                </button>
+</div>
+</div>
+<!-- Summary Cards (Bento-ish) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Total Pending -->
+<div class="relative bg-surface-container-low rounded-xl p-6 shadow-sm overflow-hidden flex flex-col justify-between min-h-[140px] group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-warning-amber/10 rounded-full blur-2xl group-hover:bg-warning-amber/20 transition-colors duration-500"></div>
+<div class="flex justify-between items-start relative z-10">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Total Pending</span>
+<span class="material-symbols-outlined text-warning-amber bg-warning-amber/10 p-2 rounded-full">pending_actions</span>
+</div>
+<div class="flex items-end gap-3 relative z-10 mt-4">
+<span class="font-headline-lg text-[48px] leading-none tracking-tight text-on-surface">42</span>
+<div class="flex items-center text-error-rose font-label-sm text-label-sm pb-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+12% vs last week</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Approved Today -->
+<div class="relative bg-surface-container-low rounded-xl p-6 shadow-sm overflow-hidden flex flex-col justify-between min-h-[140px] group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-success-emerald/10 rounded-full blur-2xl group-hover:bg-success-emerald/20 transition-colors duration-500"></div>
+<div class="flex justify-between items-start relative z-10">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Approved Today</span>
+<span class="material-symbols-outlined text-success-emerald bg-success-emerald/10 p-2 rounded-full">task_alt</span>
+</div>
+<div class="flex items-end gap-3 relative z-10 mt-4">
+<span class="font-headline-lg text-[48px] leading-none tracking-tight text-on-surface">18</span>
+<div class="flex items-center text-success-emerald font-label-sm text-label-sm pb-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+4% vs yesterday</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Avg Review Time -->
+<div class="relative bg-surface-container-low rounded-xl p-6 shadow-sm overflow-hidden flex flex-col justify-between min-h-[140px] group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-fixed/30 rounded-full blur-2xl group-hover:bg-primary-fixed/50 transition-colors duration-500"></div>
+<div class="flex justify-between items-start relative z-10">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Avg Review Time</span>
+<span class="material-symbols-outlined text-primary bg-primary/5 p-2 rounded-full">schedule</span>
+</div>
+<div class="flex items-end gap-3 relative z-10 mt-4">
+<span class="font-headline-lg text-[48px] leading-none tracking-tight text-on-surface">2.4<span class="text-[24px] text-on-surface-variant">h</span></span>
+<div class="flex items-center text-success-emerald font-label-sm text-label-sm pb-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+<span>-30m vs last week</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Queue Interface Section -->
+<section class="flex-1 px-margin-desktop pb-12 flex flex-col">
+<div class="bg-surface-container-lowest rounded-xl shadow-md flex-1 flex flex-col overflow-hidden">
+<!-- Filters Toolbar -->
+<div class="p-6 bg-surface-container-low border-b border-surface-variant flex flex-col sm:flex-row justify-between items-center gap-4">
+<!-- Search -->
+<div class="relative w-full sm:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" placeholder="Search by hotel name or owner..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex items-center gap-3 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0 scrollbar-hide">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-2 hidden sm:block">Filter by:</span>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm">
+                        All Statuses
+                        <span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim hover:text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+                        Pending
+                     </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim hover:text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+                        In Review
+                     </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto flex-1">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Hotel Name & Location</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Owner Info</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Category</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Date Submitted</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Status</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant">
+<!-- Row 1 (Pending) -->
+<tr class="hover:bg-neutral-slate-50 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden shrink-0 shadow-sm relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A modern luxury hotel exterior in a bustling city center at twilight, illuminated windows, sleek architectural lines, high resolution, corporate modern aesthetic, cool tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJeU6CROMVPfxRwVlG_aYD0OdbLN3Ge8oPH8Mfb2tegtszZ3SSnlPU87Mn_QQsdLYeBt29-og1eybAz7I6zsYag8srHGkTBHVeOX2TYJmbLjkT78G65hATlg_E82WQ6ovoVbme7zm5f2iSkzU0vjSGDKxZrscyLKfwQkxWPIhxtxTenwJ38kb4ORB7365MM8sGABu_eKuJDx6GAXekR54wSH8tEWVLeXUG3j63XaE2OqrTpX0UMdwk')"></div>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-on-primary text-[20px]">lock</span>
+</div>
+</div>
+<div class="min-w-0">
+<p class="font-headline-sm text-[16px] text-on-surface truncate">The Grand Horizon</p>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Seattle, WA, USA</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Sarah Jenkins</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">sarah.j@horizonhotels.com</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-2.5 py-1 bg-surface-container rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant/30">Luxury Resort</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Oct 24, 2023</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">09:15 AM</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-warning-amber/10 border border-warning-amber/20">
+<span class="w-2 h-2 rounded-full bg-warning-amber"></span>
+<span class="font-label-sm text-label-sm text-warning-amber uppercase tracking-wider">Pending</span>
+</div>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="px-4 py-2 bg-primary hover:bg-primary/90 text-on-primary rounded-lg font-label-md text-label-md transition-colors shadow-sm inline-flex items-center gap-2" onclick="openReviewModal('The Grand Horizon')">
+                                    Review
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 (In Review) -->
+<tr class="hover:bg-neutral-slate-50 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden shrink-0 shadow-sm relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A cozy boutique hotel lobby with warm lighting, vintage leather armchairs, and a small fireplace, high resolution, soft warm tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJN0Iqw21QOg-UhShGLniZSC3By-iCxisNNdPkA8p0sw2jJzyGr9Z-64gANE1VvK0ETwdUtYG3mywLuzYYgskqctvkM_S5uPUmQ1SKowFC56-0JgSC7Cs2J67walwU30Ejc5FPzUrflQHrn8OZErqsr6JUU8oJLp4QnEhBfTF4c2AD7SuwyLi3QcnNl-BkRkGDPxNB-dNQKiDZr4W6Z3qJue_rTd-2oDbn98jNq_DMWy875tDj91Sl')"></div>
+</div>
+<div class="min-w-0">
+<p class="font-headline-sm text-[16px] text-on-surface truncate">Maple & Pine Boutique</p>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Portland, OR, USA</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">David Chen</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">david@maplepine.com</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-2.5 py-1 bg-surface-container rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant/30">Boutique</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Oct 23, 2023</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">14:30 PM</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/50 border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">In Review</span>
+</div>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="px-4 py-2 bg-surface-container-highest hover:bg-surface-dim text-on-surface rounded-lg font-label-md text-label-md transition-colors shadow-sm inline-flex items-center gap-2">
+                                    Continue
+                                    <span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 (Pending) -->
+<tr class="hover:bg-neutral-slate-50 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden shrink-0 shadow-sm relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A modern minimalist hotel facade overlooking a beach, large glass windows reflecting the ocean, bright daylight, crisp architectural style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCV2QrmPFqKQrmYOv3LoX01-2XxI_YxNHd5AiYqMGQU2ngQmAHYA04RaLGcDv6aQrsxl_V46hpIUIeSvtfnW1vZAvw9L8xBLKB_Q3DIMNg3f5lXg_BpZWwUoIQhRzLGAyzaDWnJC5XsRXhrd68-JXcXKrs8Xjpf6Bu5RWokFDKto58LeiVCjl9heUQgH0bQji6Dxsl9DKEykuLDMqHGtHcYf9tV_irD9InmwW8NJ2BIgSurqIVZiCde')"></div>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center backdrop-blur-[1px]">
+<span class="material-symbols-outlined text-on-primary text-[20px]">lock</span>
+</div>
+</div>
+<div class="min-w-0">
+<p class="font-headline-sm text-[16px] text-on-surface truncate">Oceanview Suites</p>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Miami, FL, USA</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Elena Rodriguez</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">elena@oceanview.com</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-2.5 py-1 bg-surface-container rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant/30">Business Hotel</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Oct 23, 2023</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">11:05 AM</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-warning-amber/10 border border-warning-amber/20">
+<span class="w-2 h-2 rounded-full bg-warning-amber"></span>
+<span class="font-label-sm text-label-sm text-warning-amber uppercase tracking-wider">Pending</span>
+</div>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="px-4 py-2 bg-primary hover:bg-primary/90 text-on-primary rounded-lg font-label-md text-label-md transition-colors shadow-sm inline-flex items-center gap-2" onclick="openReviewModal('Oceanview Suites')">
+                                    Review
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 (Action Required) -->
+<tr class="hover:bg-neutral-slate-50 transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden shrink-0 shadow-sm relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A historic building repurposed as a hotel, classic European architecture, slightly moody lighting, stone facade." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDz3yOlv-llZq0q9_DTPotTZtChB3ZuVguBTCmd2LWfnQsrMuZYerlC-P2dpUXU5UZA_2LDD2gB6oQ8wqPny90X_Y7PsBk8_XN1JvhqP3B4Qp3OztoO8TZb-dvPzn0NQ0HybMREiInKhFX9LzJr9kosOrEmvpqL1yGtMxU6FfJk5NMPP6fpt6ebU-LxHzLpAhjx3uA_WP4-y0tjRtmrSfoFIH256WUB69uwckb6yMKaqJL8d9z4vhG')"></div>
+</div>
+<div class="min-w-0">
+<p class="font-headline-sm text-[16px] text-on-surface truncate">The Wellington</p>
+<p class="font-body-md text-[13px] text-on-surface-variant truncate">Boston, MA, USA</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Arthur Pendelton</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">arthur@wellington.com</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-2.5 py-1 bg-surface-container rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant/30">Historic</span>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface">Oct 21, 2023</span>
+<span class="font-body-md text-[13px] text-on-surface-variant">16:45 PM</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-rose/10 border border-error-rose/20">
+<span class="w-2 h-2 rounded-full bg-error-rose"></span>
+<span class="font-label-sm text-label-sm text-error-rose uppercase tracking-wider">Action Req</span>
+</div>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="px-4 py-2 bg-surface-container-highest hover:bg-surface-dim text-on-surface rounded-lg font-label-md text-label-md transition-colors shadow-sm inline-flex items-center gap-2">
+                                    View Issue
+                                    <span class="material-symbols-outlined text-[16px]">warning</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="p-4 border-t border-surface-variant flex items-center justify-between bg-surface-container-low">
+<span class="font-body-md text-body-md text-on-surface-variant">Showing 1 to 10 of 42 entries</span>
+<div class="flex gap-1">
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-primary text-on-primary font-label-md flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md flex items-center justify-center">2</button>
+<button class="w-10 h-10 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md flex items-center justify-center">3</button>
+<span class="w-10 h-10 flex items-center justify-center text-on-surface-variant">...</span>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Review Modal (Hidden by default) -->
+<div class="fixed inset-0 z-[100] hidden" id="review-modal">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity" onclick="closeReviewModal()"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.2)] overflow-hidden flex flex-col transform transition-all scale-95 opacity-0" id="review-modal-content">
+<div class="p-6 border-b border-surface-variant flex justify-between items-center bg-surface-container-low">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Review Application</h2>
+<button class="p-2 -mr-2 text-on-surface-variant hover:bg-surface-container rounded-full transition-colors" onclick="closeReviewModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 flex flex-col gap-6">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">Property</p>
+<p class="font-headline-md text-[20px] text-on-surface" id="modal-hotel-name">The Grand Horizon</p>
+</div>
+<div class="bg-surface-container rounded-xl p-4 border border-outline-variant/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-warning-amber text-[24px]">info</span>
+<div>
+<p class="font-body-md text-on-surface mb-1">This application requires manual verification of the business license document.</p>
+<a class="text-primary font-label-md hover:underline inline-flex items-center gap-1" href="#">
+                            View Document
+                            <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Administrator Notes (Internal)</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded-lg p-3 font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none h-24 placeholder:text-on-surface-variant/50" placeholder="Add any notes regarding this review..."></textarea>
+</div>
+</div>
+<div class="p-6 border-t border-surface-variant bg-surface flex justify-between items-center">
+<button class="text-error-rose font-label-md hover:bg-error-rose/10 px-4 py-2 rounded-lg transition-colors flex items-center gap-2">
+                    Reject Application
+                </button>
+<div class="flex gap-3">
+<button class="px-4 py-2 bg-surface-container-highest hover:bg-surface-dim text-on-surface rounded-lg font-label-md text-label-md transition-colors" onclick="closeReviewModal()">Cancel</button>
+<button class="px-6 py-2 bg-primary hover:bg-primary/90 text-on-primary rounded-lg font-label-md text-label-md transition-colors shadow-sm">
+                        Approve
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+        function openReviewModal(hotelName) {
+            const modal = document.getElementById('review-modal');
+            const content = document.getElementById('review-modal-content');
+            document.getElementById('modal-hotel-name').textContent = hotelName;
+            
+            modal.classList.remove('hidden');
+            // Trigger reflow
+            void modal.offsetWidth;
+            
+            content.classList.remove('scale-95', 'opacity-0');
+            content.classList.add('scale-100', 'opacity-100');
+        }
+
+        function closeReviewModal() {
+            const modal = document.getElementById('review-modal');
+            const content = document.getElementById('review-modal-content');
+            
+            content.classList.remove('scale-100', 'opacity-100');
+            content.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200); // match transition duration
+        }
+    </script>
+</div></main></div></body></html>

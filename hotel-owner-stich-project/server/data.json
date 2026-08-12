@@ -1,0 +1,551 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Alex Johnson",
+      "email": "admin@staypro.com",
+      "password": "7a3e29693cacfc87c1d0b134a8bfc532abe8a26edce68dfb52bf2739428b0e39",
+      "role": "admin"
+    },
+    {
+      "id": "maya",
+      "name": "Maya Ali",
+      "email": "maya@heritage.pk",
+      "password": "ac9dc8206ac332c0efc08218d89bb7ce08e532c63d6cd9641d59f56f0c579021",
+      "role": "owner"
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah Jenkins",
+      "email": "sarah@grandhorizon.com",
+      "password": "ac9dc8206ac332c0efc08218d89bb7ce08e532c63d6cd9641d59f56f0c579021",
+      "role": "owner"
+    },
+    {
+      "id": "amir",
+      "name": "Amir Khan",
+      "email": "amir@oceanview.com",
+      "password": "ac9dc8206ac332c0efc08218d89bb7ce08e532c63d6cd9641d59f56f0c579021",
+      "role": "owner"
+    },
+    {
+      "id": "guest",
+      "name": "Guest",
+      "email": "guest@staypro.com",
+      "password": "4e7cba64034375406f22b6c9e5578ba409e1959aed2e713e4dea433478928700",
+      "role": "customer",
+      "phone": ""
+    }
+  ],
+  "sessions": [
+    {
+      "token": "b3e4857278172713ff8d8c48ff5a1a100eceb709b36bd260",
+      "userId": "sarah"
+    }
+  ],
+  "hotels": [
+    {
+      "gallery": [],
+      "documents": {
+        "businessLicense": "data:application/octet-stream;base64,",
+        "identity": "data:application/octet-stream;base64,"
+      },
+      "mapLocation": "karachi,pakistan",
+      "verified": false,
+      "id": "h1",
+      "userId": "sarah",
+      "name": "The Grand Horizon Resort",
+      "owner": "Sarah Jenkins",
+      "email": "sarah@grandhorizon.com",
+      "phone": "+92 300 555 0192",
+      "address": "1200 Horizon Boulevard",
+      "city": "Karachi",
+      "country": "Pakistan",
+      "category": "5 Star",
+      "roomCount": 48,
+      "description": "A refined urban retreat with panoramic views, thoughtful service and contemporary rooms.",
+      "status": "approved",
+      "submittedAt": "2026-08-09",
+      "reason": "",
+      "logo": "GH",
+      "logoImage": "data:application/octet-stream;base64,",
+      "coverImage": "data:application/octet-stream;base64,"
+    },
+    {
+      "gallery": [],
+      "documents": {},
+      "mapLocation": "",
+      "verified": false,
+      "id": "h2",
+      "userId": "amir",
+      "name": "Oceanview Suites",
+      "owner": "Amir Khan",
+      "email": "amir@oceanview.com",
+      "phone": "+92 321 555 8301",
+      "address": "Clifton Sea View",
+      "city": "Karachi",
+      "country": "Pakistan",
+      "category": "4 Star",
+      "roomCount": 32,
+      "description": "Boutique coastal suites for business and leisure travellers.",
+      "status": "info_requested",
+      "submittedAt": "2026-08-10",
+      "reason": "Please upload a renewed business license.",
+      "logo": "OS"
+    },
+    {
+      "gallery": [],
+      "documents": {},
+      "mapLocation": "",
+      "verified": false,
+      "id": "h3",
+      "userId": "maya",
+      "name": "Lahore Heritage House",
+      "owner": "Maya Ali",
+      "email": "maya@heritage.pk",
+      "phone": "+92 333 122 3311",
+      "address": "Gulberg III",
+      "city": "Lahore",
+      "country": "Pakistan",
+      "category": "Boutique",
+      "roomCount": 18,
+      "description": "Heritage-inspired boutique hospitality in the heart of Lahore.",
+      "status": "approved",
+      "submittedAt": "2026-07-28",
+      "reason": "",
+      "logo": "LH"
+    },
+    {
+      "gallery": [],
+      "documents": {},
+      "mapLocation": "33.9070, 73.3943",
+      "verified": true,
+      "id": "h4",
+      "userId": "maya",
+      "name": "Pearl Continental Murree",
+      "owner": "Maya Ali",
+      "email": "reservations@pearlmurree.pk",
+      "phone": "+92 51 9262000",
+      "address": "Mall Road",
+      "city": "Murree",
+      "country": "Pakistan",
+      "category": "5 Star",
+      "roomCount": 36,
+      "description": "A mountain retreat with forest views, elegant dining and year-round family experiences.",
+      "status": "active",
+      "submittedAt": "2026-07-10",
+      "reason": "",
+      "logo": "PM"
+    },
+    {
+      "gallery": [],
+      "documents": {},
+      "mapLocation": "33.7150, 73.1050",
+      "verified": true,
+      "id": "h5",
+      "userId": "maya",
+      "name": "Serena Valley Resort",
+      "owner": "Maya Ali",
+      "email": "stay@serenavalley.pk",
+      "phone": "+92 51 111133133",
+      "address": "Club Road",
+      "city": "Islamabad",
+      "country": "Pakistan",
+      "category": "5 Star",
+      "roomCount": 42,
+      "description": "Contemporary resort comfort, landscaped gardens, wellness facilities and refined hospitality.",
+      "status": "approved",
+      "submittedAt": "2026-07-12",
+      "reason": "",
+      "logo": "SV"
+    }
+  ],
+  "rooms": [
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r1",
+      "hotelId": "h3",
+      "name": "Deluxe King",
+      "price": 18500,
+      "inventory": 12,
+      "available": 9,
+      "guests": 2,
+      "size": 38,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "City view"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r2",
+      "hotelId": "h3",
+      "name": "Heritage Suite",
+      "price": 28000,
+      "inventory": 4,
+      "available": 2,
+      "guests": 3,
+      "size": 56,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Balcony",
+        "Bathtub"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r3",
+      "hotelId": "h3",
+      "name": "Garden Twin",
+      "price": 16000,
+      "inventory": 8,
+      "available": 6,
+      "guests": 2,
+      "size": 34,
+      "amenities": [
+        "WiFi",
+        "Garden view"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r4",
+      "hotelId": "h4",
+      "name": "Mountain View King",
+      "price": 24000,
+      "inventory": 14,
+      "available": 8,
+      "guests": 2,
+      "size": 40,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Mountain view",
+        "Room service"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r5",
+      "hotelId": "h4",
+      "name": "Family Chalet",
+      "price": 39000,
+      "inventory": 8,
+      "available": 5,
+      "guests": 5,
+      "size": 72,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Fireplace",
+        "Room service"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r6",
+      "hotelId": "h5",
+      "name": "Executive Garden Room",
+      "price": 26000,
+      "inventory": 18,
+      "available": 11,
+      "guests": 2,
+      "size": 44,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Garden view",
+        "Gym"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r7",
+      "hotelId": "h5",
+      "name": "Presidential Suite",
+      "price": 65000,
+      "inventory": 3,
+      "available": 2,
+      "guests": 4,
+      "size": 105,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Lounge",
+        "Airport transfer"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r8",
+      "hotelId": "h1",
+      "name": "Horizon Deluxe King",
+      "price": 28500,
+      "inventory": 16,
+      "available": 10,
+      "guests": 2,
+      "size": 42,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Panoramic view",
+        "Room service"
+      ],
+      "active": true
+    },
+    {
+      "photos": [],
+      "availability": {},
+      "id": "r9",
+      "hotelId": "h1",
+      "name": "Grand Family Suite",
+      "price": 46000,
+      "inventory": 8,
+      "available": 5,
+      "guests": 5,
+      "size": 76,
+      "amenities": [
+        "WiFi",
+        "Breakfast",
+        "Private lounge",
+        "Airport transfer"
+      ],
+      "active": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BK-2003",
+      "hotelId": "h5",
+      "roomId": "r6",
+      "customerId": "guest",
+      "guest": "Guest",
+      "email": "guest@staypro.com",
+      "phone": "+92 300 1234567",
+      "room": "Executive Garden Room",
+      "checkIn": "2026-11-12",
+      "checkOut": "2026-11-15",
+      "amount": 78000,
+      "status": "cancelled",
+      "payment": {
+        "id": "pay1786542757167ipd9",
+        "status": "paid",
+        "amount": 78000,
+        "method": "card",
+        "last4": "2424",
+        "paidAt": "2026-08-12T13:52:37.167Z",
+        "mode": "local"
+      }
+    },
+    {
+      "id": "BK-2002",
+      "hotelId": "h4",
+      "roomId": "r4",
+      "customerId": "guest",
+      "guest": "Guest",
+      "email": "guest@staypro.com",
+      "phone": "+92 300 1234567",
+      "room": "Mountain View King",
+      "checkIn": "2026-10-05",
+      "checkOut": "2026-10-07",
+      "amount": 48000,
+      "status": "pending",
+      "payment": {
+        "status": "processing",
+        "amount": 48000,
+        "method": "safepay",
+        "tracker": "track_921c11e3-2a80-4cc1-bf65-cef9d5acdae2",
+        "createdAt": "2026-08-12T14:12:23.946Z"
+      }
+    },
+    {
+      "id": "BK-2001",
+      "hotelId": "h3",
+      "roomId": "r1",
+      "customerId": "guest",
+      "guest": "Guest",
+      "email": "guest@staypro.com",
+      "phone": "+92 300 1234567",
+      "room": "Deluxe King",
+      "checkIn": "2026-09-18",
+      "checkOut": "2026-09-21",
+      "amount": 55500,
+      "status": "confirmed",
+      "payment": {
+        "id": "pay2001",
+        "status": "paid",
+        "amount": 55500,
+        "method": "card",
+        "last4": "4242",
+        "paidAt": "2026-08-10T10:00:00Z",
+        "mode": "local"
+      }
+    },
+    {
+      "id": "BK-1048",
+      "hotelId": "h3",
+      "guest": "Ayesha Malik",
+      "room": "Deluxe King",
+      "checkIn": "2026-08-14",
+      "checkOut": "2026-08-17",
+      "amount": 55500,
+      "status": "confirmed"
+    },
+    {
+      "id": "BK-1049",
+      "hotelId": "h3",
+      "guest": "Daniel Lee",
+      "room": "Heritage Suite",
+      "checkIn": "2026-08-16",
+      "checkOut": "2026-08-19",
+      "amount": 84000,
+      "status": "pending"
+    },
+    {
+      "id": "BK-1050",
+      "hotelId": "h3",
+      "guest": "Fatima Noor",
+      "room": "Garden Twin",
+      "checkIn": "2026-08-19",
+      "checkOut": "2026-08-21",
+      "amount": 32000,
+      "status": "confirmed"
+    },
+    {
+      "id": "BK-1051",
+      "hotelId": "h3",
+      "guest": "Omar Shah",
+      "room": "Deluxe King",
+      "checkIn": "2026-08-22",
+      "checkOut": "2026-08-24",
+      "amount": 37000,
+      "status": "pending"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "v1",
+      "hotelId": "h3",
+      "guest": "Hina Tariq",
+      "rating": 5,
+      "text": "Beautiful property and genuinely warm service.",
+      "date": "2026-08-08",
+      "response": ""
+    },
+    {
+      "id": "v2",
+      "hotelId": "h3",
+      "guest": "Usman Raza",
+      "rating": 4,
+      "text": "Excellent room. Breakfast could have more options.",
+      "date": "2026-08-05",
+      "response": "Thank you, Usman. We have shared your note with our culinary team."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1786542763817w9nz",
+      "userId": "maya",
+      "text": "Traveler cancelled reservation BK-2003",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-08-12T13:52:43.817Z"
+    },
+    {
+      "id": "n1786542757168cg1u",
+      "userId": "maya",
+      "text": "Payment received for reservation BK-2003",
+      "type": "payment",
+      "read": false,
+      "createdAt": "2026-08-12T13:52:37.168Z"
+    },
+    {
+      "id": "n1786542757167xhae",
+      "userId": "guest",
+      "text": "Payment received for reservation BK-2003",
+      "type": "payment",
+      "read": false,
+      "createdAt": "2026-08-12T13:52:37.167Z"
+    },
+    {
+      "id": "n1786539084412fiuc",
+      "userId": "sarah",
+      "text": "The Grand Horizon Resort was approved. Your full dashboard is now unlocked.",
+      "type": "status",
+      "read": false,
+      "createdAt": "2026-08-12T12:51:24.412Z"
+    },
+    {
+      "id": "n1786537453702drpu",
+      "userId": "maya",
+      "text": "Demo Traveler cancelled reservation BK-2002",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-08-12T12:24:13.702Z"
+    },
+    {
+      "id": "n17865374434155ycg",
+      "userId": "maya",
+      "text": "Demo Traveler cancelled reservation BK-2001",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-08-12T12:24:03.415Z"
+    },
+    {
+      "id": "guest-welcome",
+      "userId": "guest",
+      "text": "Welcome to your StayPro traveler dashboard.",
+      "type": "welcome",
+      "read": true,
+      "createdAt": "2026-08-12T09:00:00Z"
+    },
+    {
+      "id": "n1",
+      "userId": "maya",
+      "text": "2 bookings need your response",
+      "read": false
+    },
+    {
+      "id": "n2",
+      "userId": "maya",
+      "text": "New 5-star review received",
+      "read": false
+    }
+  ],
+  "cleaningRequests": [],
+  "emailOutbox": [
+    {
+      "id": "e1786542757168nvv4",
+      "to": "guest@staypro.com",
+      "subject": "Payment receipt BK-2003",
+      "html": "Payment of PKR 78000 received for BK-2003. Receipt pay1786542757167ipd9.",
+      "status": "queued",
+      "createdAt": "2026-08-12T13:52:37.168Z"
+    },
+    {
+      "id": "e1786539084412dxvn",
+      "to": "sarah@grandhorizon.com",
+      "subject": "StayPro: The Grand Horizon Resort approved",
+      "html": "The Grand Horizon Resort was approved. Your full dashboard is now unlocked.",
+      "status": "queued",
+      "createdAt": "2026-08-12T12:51:24.412Z"
+    }
+  ]
+}
