@@ -53,3 +53,92 @@ html,body,#root{max-width:100%;overflow-x:hidden}.public-page,.public-grid,.publ
 }
 .rooms-empty{grid-column:1/-1;display:flex;align-items:center;gap:18px;background:var(--white);border:1px dashed var(--line);border-radius:14px;padding:24px;color:var(--muted)}.rooms-empty>svg{width:38px;height:38px;color:var(--green);flex:0 0 auto}.rooms-empty>div{flex:1}.rooms-empty h3{font:700 21px 'Playfair Display';color:var(--ink);margin:0 0 5px}.rooms-empty p{margin:0;line-height:1.5}@media(max-width:650px){.rooms-empty{align-items:flex-start;flex-direction:column}.rooms-empty .button{width:100%}}
 .payment-provider{display:flex;gap:14px;align-items:flex-start;background:var(--mint);border:1px solid var(--line);padding:16px;border-radius:11px}.payment-provider>svg{color:var(--green);flex:0 0 auto}.payment-provider p{margin:4px 0 0;color:var(--muted);line-height:1.5;font-size:13px}
+
+/* Responsive application shell and shared components */
+img,svg{max-width:100%}
+button,.button,input,select,textarea{max-width:100%}
+.card,.stat,.dialog,.form-card,.shell>main,.content,.title>div{min-width:0}
+.table-wrap{-webkit-overflow-scrolling:touch;max-width:100%}
+.table-wrap table{min-width:680px}
+.actions,.inline,.form-actions,.title>.button,.title>button{flex-wrap:wrap}
+.dialog{max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain}
+
+@media (min-width:701px) and (max-width:1100px){
+  .shell{grid-template-columns:84px minmax(0,1fr)}
+  .shell>aside{width:84px;padding:24px 10px;align-items:center}
+  .shell>main{grid-column:2}
+  .shell aside .brand{margin:0 0 30px}
+  .shell aside .brand:not(:has(span)){font-size:0}
+  .shell aside .brand{font-size:0}
+  .shell aside .brand span{margin:0}
+  .shell aside>small,.profile>div:last-child{display:none}
+  .shell nav{width:100%}
+  .shell nav a{justify-content:center;padding:12px;font-size:0}
+  .shell nav a svg{width:22px;height:22px}
+  .profile{padding:18px 0 0}
+  .content{padding:28px 24px}
+  .shell header{padding:0 22px;gap:12px}
+  .grid2{grid-template-columns:1fr}
+  .room-grid,.explore-grid,.explore-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media (max-width:700px){
+  body{padding-bottom:env(safe-area-inset-bottom)}
+  button,.button{min-height:42px}
+  .shell>aside{height:calc(66px + env(safe-area-inset-bottom));padding-bottom:calc(7px + env(safe-area-inset-bottom));overflow:hidden}
+  .shell nav{justify-content:flex-start;gap:3px;overflow-x:auto;scrollbar-width:none;padding:0 4px}
+  .shell nav::-webkit-scrollbar{display:none}
+  .shell nav a{flex:0 0 52px;justify-content:center;min-height:48px}
+  .shell>main{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+  .shell header{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));gap:6px}
+  .shell header .header-control,.shell header .signout{flex:0 0 40px;width:40px;min-height:40px;justify-content:center}
+  .content,.customer-portal,.explore-content{padding:20px 14px}
+  .title{margin-bottom:20px;gap:14px}
+  .title>div{flex:1}
+  .title>button,.title>.button{flex:0 0 auto}
+  .stat,.card{padding:17px}
+  .stats{gap:12px}
+  .room-body{padding:16px}
+  .actions>*{flex:1 1 auto}
+  .form input,.form textarea,.form select{font-size:16px;min-height:44px}
+  .modal{padding:10px;align-items:center}
+  .dialog{padding:20px 16px;width:100%;max-height:calc(100dvh - 20px)}
+  .notification-popover{top:56px;right:8px;left:8px;width:auto;max-height:calc(100dvh - 76px)}
+  .notification-items{max-height:calc(100dvh - 160px)}
+  .toast{left:12px;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));justify-content:center}
+  .status-page{margin:24px 14px;padding:34px 20px}
+  .big-chart{height:280px;padding:18px 10px}
+  .register-top{height:auto;min-height:68px;padding:10px 16px;gap:12px}
+  .register-top .brand{margin:0}
+  .register-top .text-link{font-size:13px}
+  .customer-bookings article>div:last-child{width:100%}
+  .customer-bookings article>div:last-child button{flex:1 1 auto}
+  .public-detail .room-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:520px){
+  .title{flex-direction:column}
+  .title>button,.title>.button,.title>.inline{width:100%}
+  .title>.inline>*{flex:1}
+  .stats{grid-template-columns:1fr}
+  .stat{grid-template-columns:auto minmax(0,1fr)}
+  .public-nav{align-items:stretch;padding:12px 14px}
+  .public-nav>.brand{align-self:flex-start}
+  .public-actions{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+  .public-actions::-webkit-scrollbar{display:none}
+  .public-actions>*{flex:0 0 auto}
+  .public-hero,.market-hero{padding-left:18px;padding-right:18px}
+  .public-hero h1,.market-hero h1{font-size:36px;line-height:1.08}
+  .public-hero p,.market-hero p{font-size:15px;line-height:1.55}
+  .hero-search{padding:11px 13px}
+  .hero-search input{font-size:16px;min-width:0}
+  .market-intro{margin:12px}
+  .room-bottom{align-items:flex-start;gap:10px}
+  .gallery{grid-template-columns:1fr}
+  .gallery img{height:180px}
+  .credential code{font-size:15px;overflow-wrap:anywhere}
+  .notification-head{padding:14px}
+  .notification-items>button{padding:13px}
+  .floating-home{bottom:calc(76px + env(safe-area-inset-bottom))}
+  .customer-shortcut{right:12px;bottom:calc(76px + env(safe-area-inset-bottom));padding:11px}
+}
