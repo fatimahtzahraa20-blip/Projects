@@ -142,3 +142,28 @@ button,.button,input,select,textarea{max-width:100%}
   .floating-home{bottom:calc(76px + env(safe-area-inset-bottom))}
   .customer-shortcut{right:12px;bottom:calc(76px + env(safe-area-inset-bottom));padding:11px}
 }
+/* Genuine mobile navigation: drawers instead of compressed desktop navigation */
+.mobile-menu,.drawer-close,.drawer-shade,.public-menu{display:none}
+@media (max-width:700px){
+  .shell>aside{display:flex;top:0;bottom:0;left:0;width:min(82vw,300px);height:100dvh;padding:24px 18px max(22px,env(safe-area-inset-bottom));transform:translateX(-105%);transition:transform .24s ease;overflow-y:auto;z-index:60;box-shadow:18px 0 50px #0003}
+  .shell>aside.mobile-open{transform:translateX(0)}
+  .shell aside .brand{display:flex;margin:4px 10px 28px}
+  .shell aside>small{display:block}
+  .shell aside nav{display:grid;width:100%;overflow:visible;padding:0;gap:6px}
+  .shell aside nav a{flex:none;justify-content:flex-start;min-height:44px;padding:11px 13px;font-size:14px}
+  .shell aside nav a svg{width:20px;height:20px}
+  .shell aside .profile{display:flex;margin-top:auto}
+  .drawer-close{display:inline-flex;position:absolute;right:12px;top:12px;color:#fff;z-index:1}
+  .drawer-shade{display:block;position:fixed;inset:0;z-index:55;min-height:100dvh;border-radius:0;background:#07140f88;backdrop-filter:blur(2px);padding:0}
+  .mobile-menu{display:inline-flex;margin-right:auto}
+  .shell>main{padding-bottom:0}
+  .shell header{justify-content:flex-end}
+  .public-nav{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;min-height:68px;padding:10px 14px}
+  .public-nav>.brand{align-self:center}
+  .public-menu{display:inline-flex}
+  .responsive-nav .public-actions{display:none;grid-column:1/-1;width:100%;padding:12px 0 4px;border-top:1px solid var(--line);margin-top:8px;overflow:visible;flex-direction:column;align-items:stretch}
+  .responsive-nav .public-actions.mobile-open{display:flex}
+  .responsive-nav .public-actions>*{width:100%;justify-content:center}
+  .public-nav:not(.responsive-nav) .public-actions{display:flex;grid-column:1/-1;width:100%;justify-content:flex-start;overflow-x:auto;padding:8px 0 2px;flex-wrap:nowrap}
+  .public-nav:not(.responsive-nav) .public-actions>*{flex:0 0 auto}
+}
