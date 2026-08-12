@@ -4,6 +4,11 @@ import {BrowserRouter,Routes,Route,NavLink,Navigate,useNavigate,useParams,useLoc
 import * as I from 'lucide-react';
 import './styles.css';
 
+// Recover the mobile layout even when a hosting layer serves an older HTML shell.
+let viewport=document.querySelector('meta[name="viewport"]');
+if(!viewport){viewport=document.createElement('meta');viewport.name='viewport';document.head.appendChild(viewport)}
+viewport.content='width=device-width, initial-scale=1, viewport-fit=cover';
+
 const api=async(url,options={})=>{const token=localStorage.getItem('staypro_token'),controller=new AbortController(),timer=setTimeout(()=>controller.abort(),8000);let r;try{r=await fetch('/api'+url,{...options,signal:options.signal||controller.signal,headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})}})}catch(error){throw Error(error.name==='AbortError'?'The request timed out. Please try again.':'Cannot reach the StayPro API. Start the app with npm run dev.')}finally{clearTimeout(timer)}const raw=await r.text(),type=r.headers.get('content-type')||'';let payload=null;if(raw&&type.includes('application/json')){try{payload=JSON.parse(raw)}catch{throw Error(`The API returned invalid JSON (${r.status}).`)}}if(!r.ok)throw Error(payload?.message||raw||`API request failed (${r.status} ${r.statusText}). Make sure the server is running.`);return payload};
 const money=n=>new Intl.NumberFormat('en-PK',{style:'currency',currency:'PKR',maximumFractionDigits:0}).format(n);
 const fileData=file=>new Promise((resolve,reject)=>{if(!file)return resolve('');const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=reject;reader.readAsDataURL(file)});

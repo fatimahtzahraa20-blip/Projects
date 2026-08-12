@@ -167,3 +167,10 @@ button,.button,input,select,textarea{max-width:100%}
   .public-nav:not(.responsive-nav) .public-actions{display:flex;grid-column:1/-1;width:100%;justify-content:flex-start;overflow-x:auto;padding:8px 0 2px;flex-wrap:nowrap}
   .public-nav:not(.responsive-nav) .public-actions>*{flex:0 0 auto}
 }
+/* Fallback for mobile browsers that initially use a desktop-sized layout viewport. */
+@media (max-device-width:700px){
+  .public-grid,.explore-grid,.explore-rooms,.room-grid,.review-list,.hotel-grid,.stats,.grid2,.customer-grid{grid-template-columns:1fr!important}
+  .public-grid,.explore-content,.customer-portal,.content{width:100%!important;max-width:100%!important;padding-left:14px!important;padding-right:14px!important}
+  .public-card,.room-card,.card,.stat{width:100%!important;min-width:0!important}
+  .market-hero,.public-hero,.hotel-hero{padding-left:18px!important;padding-right:18px!important}
+}
