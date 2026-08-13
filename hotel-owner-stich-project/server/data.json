@@ -175,7 +175,8 @@
       "amenities": [
         "WiFi",
         "Breakfast",
-        "City view"
+        "City view",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -194,7 +195,8 @@
         "WiFi",
         "Breakfast",
         "Balcony",
-        "Bathtub"
+        "Bathtub",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -211,7 +213,8 @@
       "size": 34,
       "amenities": [
         "WiFi",
-        "Garden view"
+        "Garden view",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -230,7 +233,8 @@
         "WiFi",
         "Breakfast",
         "Mountain view",
-        "Room service"
+        "Room service",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -249,7 +253,8 @@
         "WiFi",
         "Breakfast",
         "Fireplace",
-        "Room service"
+        "Room service",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -268,7 +273,8 @@
         "WiFi",
         "Breakfast",
         "Garden view",
-        "Gym"
+        "Gym",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -287,7 +293,8 @@
         "WiFi",
         "Breakfast",
         "Lounge",
-        "Airport transfer"
+        "Airport transfer",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -306,7 +313,8 @@
         "WiFi",
         "Breakfast",
         "Panoramic view",
-        "Room service"
+        "Room service",
+        "Free Cleaning Service"
       ],
       "active": true
     },
@@ -325,7 +333,8 @@
         "WiFi",
         "Breakfast",
         "Private lounge",
-        "Airport transfer"
+        "Airport transfer",
+        "Free Cleaning Service"
       ],
       "active": true
     }
@@ -352,7 +361,11 @@
         "last4": "2424",
         "paidAt": "2026-08-12T13:52:37.167Z",
         "mode": "local"
-      }
+      },
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-2002",
@@ -373,7 +386,11 @@
         "method": "safepay",
         "tracker": "track_921c11e3-2a80-4cc1-bf65-cef9d5acdae2",
         "createdAt": "2026-08-12T14:12:23.946Z"
-      }
+      },
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-2001",
@@ -396,7 +413,11 @@
         "last4": "4242",
         "paidAt": "2026-08-10T10:00:00Z",
         "mode": "local"
-      }
+      },
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-1048",
@@ -406,7 +427,11 @@
       "checkIn": "2026-08-14",
       "checkOut": "2026-08-17",
       "amount": 55500,
-      "status": "confirmed"
+      "status": "confirmed",
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-1049",
@@ -416,7 +441,11 @@
       "checkIn": "2026-08-16",
       "checkOut": "2026-08-19",
       "amount": 84000,
-      "status": "pending"
+      "status": "pending",
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-1050",
@@ -426,7 +455,11 @@
       "checkIn": "2026-08-19",
       "checkOut": "2026-08-21",
       "amount": 32000,
-      "status": "confirmed"
+      "status": "confirmed",
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     },
     {
       "id": "BK-1051",
@@ -436,7 +469,11 @@
       "checkIn": "2026-08-22",
       "checkOut": "2026-08-24",
       "amount": 37000,
-      "status": "pending"
+      "status": "pending",
+      "services": [
+        "Free Cleaning Service"
+      ],
+      "cleaningFee": 0
     }
   ],
   "reviews": [
