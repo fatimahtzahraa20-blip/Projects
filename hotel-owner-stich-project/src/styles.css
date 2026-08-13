@@ -174,3 +174,10 @@ button,.button,input,select,textarea{max-width:100%}
   .public-card,.room-card,.card,.stat{width:100%!important;min-width:0!important}
   .market-hero,.public-hero,.hotel-hero{padding-left:18px!important;padding-right:18px!important}
 }
+.language-switcher{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;padding:4px;background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:999px;box-shadow:0 8px 28px #0002}
+.language-switcher button{min-height:34px;padding:6px 12px;border:0;border-radius:999px;background:transparent;color:var(--text,#173d32);font-weight:700}
+.language-switcher button.active{background:var(--green,#1f6b55);color:#fff}
+.cleaning-offer{display:flex;align-items:center;gap:14px;width:min(680px,100%);margin:22px auto;padding:16px 20px;border:1px solid #ffffff55;border-radius:16px;background:#ffffff18;backdrop-filter:blur(8px);text-align:left}
+.cleaning-offer svg{flex:0 0 auto;width:30px;height:30px;color:#f7d774}.cleaning-offer div{display:grid;gap:3px}.cleaning-offer b{font-size:13px;letter-spacing:.12em;color:#f7d774}.cleaning-offer span{font-size:16px;color:#fff}
+html[dir="rtl"] body{font-family:Tahoma,Arial,sans-serif}html[dir="rtl"] .language-switcher{right:auto;left:18px}html[dir="rtl"] .cleaning-offer{text-align:right}html[dir="rtl"] .public-actions,html[dir="rtl"] .inline,html[dir="rtl"] .row{flex-direction:row-reverse}html[dir="rtl"] input,html[dir="rtl"] textarea,html[dir="rtl"] select{text-align:right}html[dir="rtl"] .shell>aside{right:0;left:auto}html[dir="rtl"] .shell>main{margin-right:260px;margin-left:0}
+@media(max-width:700px){.language-switcher{right:10px;bottom:10px}.cleaning-offer{align-items:flex-start;padding:14px}.cleaning-offer span{font-size:14px}html[dir="rtl"] .language-switcher{left:10px;right:auto}html[dir="rtl"] .shell>main{margin-right:0}html[dir="rtl"] .shell>aside{transform:translateX(105%)}html[dir="rtl"] .shell>aside.mobile-open{transform:translateX(0)}}
