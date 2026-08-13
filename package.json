@@ -1,0 +1,8 @@
+{
+  "name": "projects-vercel-entrypoint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix hotel-owner-stich-project run build"
+  }
+}
